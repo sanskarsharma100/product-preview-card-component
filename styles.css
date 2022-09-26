@@ -1,0 +1,88 @@
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    max-width: 34rem;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.pro-img {
+    height: 100%;
+    border-radius: 12px 0 0 12px;
+}
+
+.pro-img-mobile {
+    display: none;
+}
+
+.card-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    letter-spacing: 8px;
+}
+
+.decription {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+
+.perfume-name {
+    font-family: 'Fraunces', serif;
+    line-height: 1em;
+}
+
+.discounted-price {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+}
+
+.undiscounted-price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin-left: 1.5em;
+    position: relative;
+    bottom: 5px;
+}
+
+.cart-btn {
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    border-style: none;
+    border-radius: 8px;
+    padding: 0.5em;
+    width: 100%;
+}
+
+.cart-btn:hover {
+    background-color: hsl(158, 36%, 50%);
+}
+
+.perfume-name, .discounted-price {
+    font-size: 2em;
+}
+
+@media(max-width: 576px) {
+    .pro-img {
+        display: none;
+    }
+    .pro-img-mobile {
+        display: block;
+        border-radius: 12px 12px 0 0;
+    }
+    .cart-btn {
+        /* padding: 0.5em 11.5em; */
+        padding: 0.5rem;
+    }
+}
